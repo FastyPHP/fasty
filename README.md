@@ -12,3 +12,12 @@ Installing Fasty is **super** easy, just follow the steps bellow
 1. Create something awesome!
 
 Fasty doesn't require any console work on its own but it needs it for the initial installation
+
+## Benchmarks
+
+All of the benchmarks are done using Apaches benchmark tool called ApacheBench
+They are also done on my local machine (which isn't high spec), so the results are somewhat low
+
+1. Fasty - 53.91 _requests/second_
+1. Laravel - 13.59 _requests/second_
+1. CakePHP - 10.83 _requests/second_
