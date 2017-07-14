@@ -22,7 +22,7 @@ class Template extends \Smarty
 		$this->languagePath		=		Config::Get('langPath');
 		$this->compilePath		=		Config::Get('tempComp');
 		$this->cachePath		=		Config::Get('tempCach');
-		$this->language			=		Congig::Get('language');
+		$this->language			=		Config::Get('language');
 
 		if(Config::Get('tempCachTime')){
 			$this->caching			= 	1;
