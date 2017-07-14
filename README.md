@@ -31,6 +31,6 @@ ab -n 1000 -c 100 http://localhost
 
 ### The actual results
 
-1. Fasty - 53.91 _requests/second_
-1. Laravel - 13.59 _requests/second_
-1. CakePHP - 10.83 _requests/second_
+1. Fasty - 53.91 _requests/second_ (MySQL connection, default file cache system)
+1. Laravel - 13.59 _requests/second_ (MySQL connection, default file cache system)
+1. CakePHP - 10.83 _requests/second_ (MySQL connection, default file cache system)
