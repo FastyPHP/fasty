@@ -1,3 +1,7 @@
 language: php
 sudo: enabled
 dist: xenial
+php:
+  - '7.1'
+install:
+   - composer install
