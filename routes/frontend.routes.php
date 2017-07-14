@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Osnovne stranice
+ * Some frontend magic
  */
 
 $this->get('/', 'WelcomeController@sayhi');

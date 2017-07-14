@@ -5,3 +5,4 @@
 /public/Templates/Cache/*
 /public/Templates/Compile/*
 /config.php
+/composer.lock
