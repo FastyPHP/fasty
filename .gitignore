@@ -4,3 +4,4 @@
 /logs/*
 /public/Templates/Cache/*
 /public/Templates/Compile/*
+/config.php
