@@ -15,8 +15,21 @@ Fasty doesn't require any console work on its own but it needs it for the initia
 
 ## Benchmarks
 
-All of the benchmarks are done using Apaches benchmark tool called ApacheBench
+All of the benchmarks are done using Apaches benchmark tool called ApacheBench version 2.3
 They are also done on my local machine (which isn't high spec), so the results are somewhat low
+
+### Benchmark command
+
+```bash
+ab -n 1000 -c 100 http://localhost
+```
+
+### Machine specs
+* Processor: Intel Core i5-4210U @ 1.70GHz
+* RAM: 8 GB
+* System: 64-bit Windows 10
+
+### The actual results
 
 1. Fasty - 53.91 _requests/second_
 1. Laravel - 13.59 _requests/second_
