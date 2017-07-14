@@ -94,7 +94,7 @@ Link::loadObjects(
  * Match a requested url with our array => $router->add
  */
 
-$router->handle($request);
+echo $router->handle($request);
 
 /**
  * Debug console
