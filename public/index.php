@@ -1,6 +1,6 @@
 <?php
 /**
- * Sve stavljamo iza public foldera radi sigurnosti
+ * Everything is loaded via this index file
  */
 
 require_once ("../kernel.php");
