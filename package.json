@@ -1,0 +1,33 @@
+{
+  "name": "tutor.ba",
+  "version": "0.0.5",
+  "description": "Mreza instruktora",
+  "main": "index.php",
+  "author": "Champa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://tutor.ba/prijavibug"
+  },
+  "homepage": "https://tutor.ba",
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "console-stamp": "^0.2.4",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "socket.io": "^1.7.4",
+    "socket.io-redis": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "learning",
+    "marketplace",
+    "network"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/LorisStartup/Tutor.ba.git"
+  }
+}

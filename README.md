@@ -1,4 +1,2 @@
 # Fasty
-A fast and simple PHP framework
-
-(Currently under heavy development)
+A simple and fast PHP framework

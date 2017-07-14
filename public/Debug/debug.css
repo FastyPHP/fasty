@@ -1,0 +1,141 @@
+body {
+  margin: 0; }
+
+.debugbar {
+  height: 40px;
+  background: #262626;
+  color: #fff;
+  position: fixed;
+  width: 87%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 6px 6px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 0.2s cubic-bezier(0.34, 1.61, 0.7, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.34, 1.61, 0.7, 1);
+  -o-transition: all 0.2s cubic-bezier(0.34, 1.61, 0.7, 1);
+  transition: all 0.2s cubic-bezier(0.34, 1.61, 0.7, 1); }
+  .debugbar .toggleButton {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    padding: 0 8px;
+    font-size: 24px;
+    padding-top: 3px;
+    padding-right: 10px;
+    cursor: pointer; }
+  .debugbar:hover {
+    height: 50px; }
+  .debugbar.expanded {
+    height: 300px; }
+    .debugbar.expanded:hover {
+      height: 300px; }
+  .debugbar .column {
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 30px;
+    margin-top: 5px;
+    height: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1); }
+    .debugbar .column .fa {
+      -webkit-transition: .2s all;
+      -moz-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all; }
+    .debugbar .column:nth-last-of-type(1) {
+      border-right: 0; }
+    .debugbar .column:hover {
+      cursor: pointer; }
+      .debugbar .column:hover .fa {
+        color: #e21313; }
+  .debugbar .debugContent {
+    color: #fff;
+    overflow-y: auto;
+    height: 250px;
+    width: 100%;
+    margin-top: 20px; }
+    .debugbar .debugContent .debug_row {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 8px;
+      -webkit-transition: .2s all;
+      -moz-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all; }
+      .debugbar .debugContent .debug_row .fa {
+        margin-right: 5px; }
+      .debugbar .debugContent .debug_row.debug_query span {
+        color: #e21313; }
+      .debugbar .debugContent .debug_row:hover {
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        border-bottom-color: transparent; }
+      .debugbar .debugContent .debug_row:nth-last-of-type(1) {
+        border-bottom: 0; }
+    .debugbar .debugContent .params {
+      padding: 8px; }
+    .debugbar .debugContent table {
+      padding: 8px;
+      width: 99%; }
+      .debugbar .debugContent table tr {
+        color: #fff;
+        -webkit-transition: .2s all;
+        -moz-transition: .2s all;
+        -o-transition: .2s all;
+        transition: .2s all; }
+        .debugbar .debugContent table tr:hover {
+          background: rgba(255, 255, 255, 0.1); }
+        .debugbar .debugContent table tr th {
+          text-align: left;
+          color: #fff; }
+        .debugbar .debugContent table tr td {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          color: rgba(255, 255, 255, 0.8);
+          word-break: break-all;
+          width: 50%; }
+        .debugbar .debugContent table tr:nth-last-of-type(1) {
+          border-bottom: 0; }
+          .debugbar .debugContent table tr:nth-last-of-type(1) td {
+            border-bottom: 0; }
+
+.error_debug {
+  font-family: 'Open Sans', sans-serif; }
+  .error_debug h4 {
+    background: #e21313;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: normal;
+    margin-bottom: 0; }
+  .error_debug .body {
+    padding: 10px; }
+    .error_debug .body .stack {
+      padding: 8px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      -webkit-transition: .2s all;
+      -moz-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all; }
+      .error_debug .body .stack:nth-last-of-type(1) {
+        border-bottom: 0; }
+      .error_debug .body .stack:hover {
+        background: rgba(0, 0, 0, 0.1); }
+      .error_debug .body .stack h5 {
+        margin: 0;
+        font-size: 17px; }
+      .error_debug .body .stack p {
+        margin: 0; }
+        .error_debug .body .stack p span {
+          color: #e21313;
+          font-weight: bold; }
+        .error_debug .body .stack p.args {
+          font-weight: bold;
+          margin-left: 10px; }
+        .error_debug .body .stack p.argument {
+          margin-left: 10px; }
+
+/*# sourceMappingURL=debug.css.map */

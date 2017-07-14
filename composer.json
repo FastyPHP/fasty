@@ -1,0 +1,12 @@
+{
+    "require": {
+        "symfony/filesystem": "^3.1",
+        "symfony/routing": "^3.1",
+        "symfony/config": "^3.1",
+        "symfony/http-kernel": "^3.1",
+        "symfony/http-foundation": "^3.1",
+        "league/color-extractor": "^0.3.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "filp/whoops": "^2.1"
+    }
+}

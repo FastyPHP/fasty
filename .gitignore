@@ -1,0 +1,6 @@
+/vendor
+/node_modules
+/cache/*
+/logs/*
+/public/Templates/Cache
+/public/Templates/Compile
