@@ -26,5 +26,8 @@
         "psr-4": {
             "App\\": "app/Core/"
         }
-    }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
