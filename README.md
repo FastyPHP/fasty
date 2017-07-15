@@ -1,4 +1,4 @@
-# Fasty - the fast and simple PHP framework
+# Fasty - a fast and simple PHP framework
 (Currently under heavy development)
 ## Installation
 
