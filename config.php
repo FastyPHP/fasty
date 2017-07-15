@@ -26,9 +26,9 @@ return [
 	'database'			=>	[ # Set up the database
 		'driver'		=>	'mysql',
 		'host'		=>		'127.0.0.1',
-		'user'		=>		'fasty_user',
-		'password'	=>		'fasty_password',
-		'database'	=>		'fasty_database'
+		'user'		=>		'root',
+		'password'	=>		'',
+		'database'	=>		'uploadujme'
 	],
 	'devpages'			=>	[],
 	'disablecookies'	=>	[]

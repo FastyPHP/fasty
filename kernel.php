@@ -2,70 +2,41 @@
 ob_start();
 
 /**
- * Start our $_SESSION
+ * Start our session
  */
 
 session_start();
 
 /**
- * Vendor and functions library
+ * Vendor
  */
 
 require_once ("vendor/autoload.php");
-require_once ("core/Libraries/functions.php");
 
 /**
- * Require important stuff
+ * Register our helpers and functions
  */
 
-require ("core/Database/database.mysql-pdo.php");
-require ("core/Libraries/smarty/libs/Smarty.class.php");
-require ("core/Classes/config.class.php");
-require ("core/Classes/link.class.php");
-require ("core/Classes/error_handler.class.php");
-require ("core/Classes/core.class.php");
-require ("core/Classes/crypto.class.php");
-require ("core/Classes/debug.class.php");
-require ("core/Classes/template.class.php");
-require ("core/Classes/log.class.php");
-require ("core/Classes/router.class.php");
-require ("core/Classes/request.class.php");
-require ("core/Classes/file.class.php");
-require ("core/Classes/cache.class.php");
-require ("core/Classes/time.class.php");
-
-/**
- * Register our helpers
- */
-
-require ("core/helpers.php");
+require ("app/functions.php");
+require ("app/helpers.php");
 
 /**
  * Namespaces
  */
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
-use Core\Database\MySQL_PDO\Database;
-use Core\Classes\Config;
-use Core\Classes\Link;
-use Core\Classes\ErrorHandler;
-use Core\Classes\Debug;
-use Core\Classes\Template;
-use Core\Classes\Router;
-use Core\Classes\Log;
-use Core\Classes\Cache;
-use Core\Classes\RequestClass;
+use Symfony\Component\{HttpFoundation\Request, Filesystem\Filesystem, Filesystem\Exception\IOExceptionInterface};
+use App\Database\sqlDB;
+use App\System\{Config, Link, ErrorHandler, Debug, Template, Log, Cache};
+use App\Http\{Router, Request AS FastyRequest};
 
 Debug::executionStart();
-Config::Init();
+Config::init();
 
 /**
  * Initialize our classes
  */
 
-$router 		=	new Router();
+$router = new Router();
 
 if(Config::get('error_handler') == 0) {
 	$errhandler	= new ErrorHandler();
@@ -82,12 +53,12 @@ $request = Request::createFromGlobals();
  */
 
 Link::loadObjects(
-	new Database(Config::Get('database')),
+	new sqlDB(),
 	new Template(),
-	new RequestClass(),
+	new FastyRequest(),
 	new Log(),
 	new Filesystem(),
-	new Cache(Config::Get('cachePath'), Config::Get('cacheTime'))
+	new Cache()
 );
 
 /**
