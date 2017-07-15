@@ -79,7 +79,6 @@ if(Config::Get('displayConsole')){
 		'templates'		=>	Debug::$templates,
 		'languages'		=>	Debug::$languages,
 		'execution'		=>	$end_time,
-		//'ram_usage'		=>	convertBytes(memory_get_usage()),
 		'peak_ram'		=>	convertBytes(memory_get_peak_usage()),
 		'request'		=>	server()
 	]);

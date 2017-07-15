@@ -34,31 +34,31 @@ class sqlDB
 		return $this->con->rollBack();
 	}
 
-	public function DestroyConnection() {
+	public function destroyConnection() {
 		return $this->con = null;
 	}
 
-	public function LastID() {
+	public function lastID() {
 		return $this->con->lastInsertId();
 	}
 
-	public function CountRows($query) {
+	public function countRows($query) {
 		return $query->rowCount();
 	}
 
-	public function Error() {
+	public function error() {
 		return $this->con->errorCode();
 	}
 
-	public function ConstructQuery(string $query) {
+	public function constructQuery(string $query) {
 		$this->constructQuery = $query;
 	}
 
-	public function ConstructAddParam(string $key, $val) {
+	public function constructAddParam(string $key, $val) {
 		$this->constructParams[$key] = $val;
 	}
 
-	public function FireQuery() {
+	public function fireQuery() {
 
 		return $this->query($this->constructQuery, $this->constructParams);
 	}
