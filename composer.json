@@ -1,4 +1,12 @@
 {
+    "name": "fasty/framework",
+    "type": "framework",
+    "author": "Champa",
+    "description": "A fast and simple PHP framework",
+    "keywords": ["framework","fast"],
+    "homepage": "https://github.com/FastyPHP/fasty",
+    "license": "Apache License 2.0",
+
     "require": {
         "symfony/filesystem": "^3.1",
         "symfony/routing": "^3.1",
