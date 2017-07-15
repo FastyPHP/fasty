@@ -4,7 +4,7 @@ return [
 	'site_uri'			=>	'http://localhost',
 	'timezone'			=>	'Europe/Sarajevo',
 	'language'			=>	'English',
-	'version'			=>	'0.9.3'
+	'version'			=>	'0.9.3',
 	'sslonly'			=>	false,
 	'underdev'			=>	true,
 	'displayConsole'	=>	true,
