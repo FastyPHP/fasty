@@ -2,9 +2,9 @@
 
 use App\System\Link;
 
-function view(string $template, ?array $params) {
+function view(string $template, ?array $params = [], ?int $cacheExpiry = 0) {
 
-	return Link::$template->view($template, $params);
+	return Link::$template->view($template, $params, $cacheExpiry);
 }
 
 function language(string $language) {
