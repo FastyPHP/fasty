@@ -4,8 +4,6 @@
 
 Installing Fasty is **super** easy, just follow the steps bellow
 
-Installing Fasty is super easy, just follow the steps bellow
-
 > composer create-project fasty/framework project_name
 
 Or download the latest stable release (https://github.com/FastyPHP/fasty/releases) and then run
