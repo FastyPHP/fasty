@@ -34,3 +34,10 @@ ab -n 1000 -c 100 http://localhost
 1. Fasty - 53.91 _requests/second_ (MySQL connection, default file cache system)
 1. Laravel - 13.59 _requests/second_ (MySQL connection, default file cache system)
 1. CakePHP - 10.83 _requests/second_ (MySQL connection, default file cache system)
+
+## Requirements
+
+Fasty requires the following services
+
+* PHP 7.1 or greater
+* MariaDB 10.1/MySQL 5.7.14 or greater
