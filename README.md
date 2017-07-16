@@ -4,7 +4,14 @@
 
 Installing Fasty is **super** easy, just follow the steps bellow
 
-1. Download the repository and place it into your web root
+Installing Fasty is super easy, just follow the steps bellow
+
+> composer create-project fasty/framework project_name
+
+Or download the latest stable release (https://github.com/FastyPHP/fasty/releases) and then run
+
+> composer install
+
 1. Set the web servers root directory to the /Public folder
 1. Open console/command prompt and cd into the Fasty root folder
 1. Run composer install and wait until composer finishes downloading the necessary files (if don't have composer set up, you can do so by visiting this link: https://getcomposer.org/doc/00-intro.md )
