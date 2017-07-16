@@ -6,3 +6,4 @@
 /public/Templates/Compile/*
 composer.lock
 config.php
+*.md

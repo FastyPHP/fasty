@@ -3,7 +3,7 @@
     "type": "project",
     "author": "Champa",
     "language": "php",
-    "version": "0.9.32",
+    "version": "0.9.33",
     "description": "A fast and simple PHP framework",
     "keywords": ["framework","fasty"],
     "homepage": "https://github.com/FastyPHP/fasty",
